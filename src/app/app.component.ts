@@ -13,6 +13,7 @@ export class AppComponent {
 
   public name = "Angular";
   public topic = "Data Binding"; */
+  
   value = 0;
   callBuffet(value: string) {
     const price = Number(value);

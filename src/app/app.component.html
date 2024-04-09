@@ -1,4 +1,4 @@
-<!-- <style>
+<!--  <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -314,6 +314,10 @@
 <router-outlet />
  -->
 
+<span> มา 4 จ่าย 3 </span>
 <div>
-  <app-container></app-container>
+  <input #priceBuffetInput type="text" value="2000" placeholder="ราคา" />
+  <button (click)="CallBuffet(priceBuffetInput.value)">คำนวณ</button>
 </div>
+
+<span> คนละ {{ value }} บาท</span>

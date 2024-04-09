@@ -15,6 +15,8 @@ export class AppComponent {
   public topic = "Data Binding"; */
   value = 0;
   callBuffet(value: string) {
-    this.value = (value === "buy" ? 1 : -1) * 1;
+    const price = Number(value);
+    this.value =(price*3)/4
   }
+  
 }
